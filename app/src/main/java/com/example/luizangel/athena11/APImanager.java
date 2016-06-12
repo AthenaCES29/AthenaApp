@@ -26,7 +26,8 @@ public class APImanager {
     HomeInterface delegate;
 
     /* String APIurl = "http://192.168.137.62:8000"; */
-    String APIurl    = "http://10.0.2.2:8000";
+    /* String APIurl    = "http://10.0.2.2:8000";   */
+    String APIurl   = "https://athena-t17.herokuapp.com/";
 
     public String APIlogin (String username, String password) {
         return APIurl + "/Mlogin/?" + "username=" + username + "&password=" + password;
