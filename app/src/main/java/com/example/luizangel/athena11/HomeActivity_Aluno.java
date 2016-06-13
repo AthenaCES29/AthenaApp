@@ -250,7 +250,7 @@ public class HomeActivity_Aluno extends AppCompatActivity implements HomeInterfa
             cellTextView.setLines(2);
             cellTextView.setText(text);
             cellTextView.setBackgroundColor(color);
-            cellTextView.setTextSize(16);
+            cellTextView.setTextSize(14);
         }
         return cellTextView;
     }

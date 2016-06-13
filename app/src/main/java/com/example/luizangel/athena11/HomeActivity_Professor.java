@@ -277,7 +277,7 @@ public class HomeActivity_Professor extends AppCompatActivity implements HomeInt
             cellTextView.setLines(3);
             cellTextView.setText(text);
             cellTextView.setBackgroundColor(color);
-            cellTextView.setTextSize(16);
+            cellTextView.setTextSize(14);
         }
         return cellTextView;
     }
