@@ -223,7 +223,7 @@ public class HomeActivity_Aluno extends AppCompatActivity implements HomeInterfa
                         if (data.has("data_envio") && date.equals(sdf.parse(data.getString("data_envio")))) {
                             cellView.setDayOfMonthTextView(cellContent(daysdf.format(date),
                                     cellView.getDayOfMonthTextView(), Color.rgb(200, 225, 165),
-                                    (data.getString("turma") + "\n" + data.getString("atividade"))
+                                    (data.getString("turma") + "\n" + data.getString("atividade") + "\n" + "envio")
                                 ));
                             return;
                         }
@@ -231,12 +231,12 @@ public class HomeActivity_Aluno extends AppCompatActivity implements HomeInterfa
                             if (data.has("fechada") && data.getString("fechada").equals("true"))
                                 cellView.setDayOfMonthTextView(cellContent(daysdf.format(date),
                                         cellView.getDayOfMonthTextView(), Color.rgb(255, 205, 210),
-                                        (data.getString("turma") + "\n" + data.getString("atividade"))
+                                        (data.getString("turma") + "\n" + data.getString("atividade") + "\n" + "fim")
                                 ));
                             else
                                 cellView.setDayOfMonthTextView(cellContent(daysdf.format(date),
                                     cellView.getDayOfMonthTextView(), Color.rgb(255, 245, 160),
-                                    (data.getString("turma") + "\n" + data.getString("atividade"))
+                                    (data.getString("turma") + "\n" + data.getString("atividade") + "\n" + "prazo")
                                 ));
                             return;
                         }
@@ -251,7 +251,7 @@ public class HomeActivity_Aluno extends AppCompatActivity implements HomeInterfa
 
     TextView cellContent(String day, TextView cellTextView, int color, String text) {
         if (cellTextView.getText().equals(day)) {
-            cellTextView.setLines(2);
+            cellTextView.setLines(3);
             cellTextView.setText(text);
             cellTextView.setBackgroundColor(color);
             cellTextView.setTextSize(14);
