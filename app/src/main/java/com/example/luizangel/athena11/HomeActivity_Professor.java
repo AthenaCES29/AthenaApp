@@ -75,6 +75,8 @@ public class HomeActivity_Professor extends AppCompatActivity implements HomeInt
         nome = getIntent().getExtras().getString("nome");
         id = getIntent().getExtras().getString("id");
 
+        setTitle("Bem vindo, " + nome);
+
         /**************Calendario**************/
         Calendar nextMonth = Calendar.getInstance();
         nextMonth.add(Calendar.MONTH, 1);

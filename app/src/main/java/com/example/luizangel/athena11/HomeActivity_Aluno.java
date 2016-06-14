@@ -54,7 +54,7 @@ public class HomeActivity_Aluno extends AppCompatActivity implements HomeInterfa
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_home_aluno);
         initialize(savedInstanceState);
         ButterKnife.bind(this);
         performRequests();
@@ -72,6 +72,9 @@ public class HomeActivity_Aluno extends AppCompatActivity implements HomeInterfa
 
         nome = getIntent().getExtras().getString("nome");
         id = getIntent().getExtras().getString("id");
+
+        //Screen title
+        setTitle("Bem vindo, " + nome);
 
         /**************Calendario**************/
         Calendar nextMonth = Calendar.getInstance();
@@ -106,6 +109,7 @@ public class HomeActivity_Aluno extends AppCompatActivity implements HomeInterfa
                         calendarPickerView.setVisibility(View.INVISIBLE);
                         horizontalScrollView2.setVisibility(View.VISIBLE);
                         textView.setVisibility(View.VISIBLE);
+                        textView.setText("Atividades Pendentes");
                         textView4.setVisibility(View.VISIBLE);
                         horizontalScrollView.setVisibility(View.VISIBLE);
                         scrollView3.setVisibility(View.INVISIBLE);

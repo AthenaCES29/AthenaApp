@@ -28,7 +28,9 @@
                     android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:id="@+id/linearLayout"></LinearLayout>
+                    android:id="@+id/linearLayout">
+
+                </LinearLayout>
             </HorizontalScrollView>
 
             <TextView
@@ -74,7 +76,9 @@
                     android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:id="@+id/linearLayout2"></LinearLayout>
+                    android:id="@+id/linearLayout2">
+
+                </LinearLayout>
             </HorizontalScrollView>
 
             <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -87,14 +91,18 @@
             <ScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/scrollView3" >
+                android:id="@+id/scrollView3"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true">
 
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/linearLayout3"
-                    android:baselineAligned="false"></LinearLayout>
+                    android:baselineAligned="false">
+
+                </LinearLayout>
             </ScrollView>
 
         </RelativeLayout>

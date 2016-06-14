@@ -78,6 +78,8 @@
     <string name="turmas">Turmas</string>
     <string name="atividades_da_turma">Atividades da turma</string>
     <string name="entrar">Entrar</string>
+    <string name="lembrar_senha">Lembrar Senha</string>
+    <string name="logo_Athena">Athena</string>
 
     <!-- TODO: Remove or change this placeholder text -->
 </resources>

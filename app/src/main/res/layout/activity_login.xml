@@ -39,7 +39,8 @@
         android:id="@+id/button"
         android:layout_marginTop="39dp"
         android:layout_below="@+id/switch1"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"/>
 
 
     <ImageView
@@ -49,12 +50,13 @@
         android:gravity="center"
         android:src="@drawable/athena_logo"
         android:layout_above="@+id/editText"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logo_Athena"/>
 
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lembrar Senha"
+        android:text="@string/lembrar_senha"
         android:id="@+id/switch1"
         android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true"
